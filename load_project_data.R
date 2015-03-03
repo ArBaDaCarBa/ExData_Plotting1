@@ -9,3 +9,5 @@ hpc.data <<- read.csv.sql(
     sep=';')
 
 hpc.data$Date <- as.Date(hpc.data$Date, format('%d/%m/%Y'))
+hpc.data$Time <- strptime(paste(hpc.data$Date, hpc.data$Time),
+                          format='%Y-%m-%d %H:%M:%S')

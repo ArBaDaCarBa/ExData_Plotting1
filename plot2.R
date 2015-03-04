@@ -1,4 +1,5 @@
 source('load_project_data.R')  # Loads data
+Sys.setlocale("LC_TIME", "C")  # Otherwise labels will be localized
 
 png('plot2.png') # Default size is OK (480x480px)
 

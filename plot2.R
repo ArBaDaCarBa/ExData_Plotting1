@@ -8,7 +8,7 @@ plot(
     hpc.data$Time, hpc.data$Global_active_power,
     type='l',
     xlab='',
-    ylab='Global active power (kilowatts)',
+    ylab='Global Active Power (kilowatts)',
 )
 
 dev.off()

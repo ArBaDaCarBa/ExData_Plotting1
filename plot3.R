@@ -1,4 +1,5 @@
-#source('load_project_data.R')  # Loads data
+source('load_project_data.R')  # Loads data
+Sys.setlocale("LC_TIME", "C")  # Otherwise labels will be localized
 
 png('plot3.png') # Default size is OK (480x480px)
 
@@ -19,7 +20,7 @@ with(hpc.data,
 # Then the legend
 legend('topright',
        legend=c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'),
-       pch='-',
+       lwd=1,
        col=c('black', 'red', 'blue'))
 
 dev.off()

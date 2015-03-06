@@ -1,5 +1,4 @@
 # Loads the project data
-
 library(sqldf)  # To avoid loading the whole file in memory
 
 # Loading data of interest from file
@@ -12,4 +11,4 @@ hpc.data$Date <- as.Date(hpc.data$Date, format('%d/%m/%Y'))
 hpc.data$Time <- strptime(paste(hpc.data$Date, hpc.data$Time),
                           format='%Y-%m-%d %H:%M:%S')
 # And there is no longer need of Date
-hcp.data$Date <- NULL
+hpc.data$Date <- NULL
